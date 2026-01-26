@@ -1,0 +1,24 @@
+# Core Computer Vision
+opencv-python
+opencv-contrib-python
+
+# Deep Learning for Emotion Recognition
+tensorflow
+keras
+
+# Face Detection (Alternative to OpenCV's built-in)
+mtcnn
+
+# Data Processing
+numpy
+pandas
+
+# Visualization
+matplotlib
+seaborn
+
+# GUI (for enhanced interface)
+pillow
+
+# Additional utilities
+scikit-learn
