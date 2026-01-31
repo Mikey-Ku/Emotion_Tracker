@@ -118,7 +118,11 @@ class Pipe:
     
     def __init__(self, x):
         self.x = x
-        self.gap_y = random.randint(150, SCREEN_HEIGHT - GROUND_HEIGHT - 150 - PIPE_GAP)
+        # Allow gap to be positioned anywhere from 80 pixels from top to 80 pixels from ground
+        # This creates much more variation in pipe heights
+        min_gap_y = 80  # Minimum distance from top
+        max_gap_y = SCREEN_HEIGHT - GROUND_HEIGHT - PIPE_GAP - 80  # Maximum distance from ground
+        self.gap_y = random.randint(min_gap_y, max_gap_y)
         self.width = PIPE_WIDTH
         self.passed = False
     
